@@ -8,23 +8,28 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    background-color: beige;
+    background-color: #e3e7db;
+    height: 100vh;
 }
 
 .header{
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     text-align: center;
-    height: 20%;
-    background-color: azure;
+    height: 15vh;
+    background-color: #636087;
 }
 
 #contenido-principal{
     grid-column: 2 / -1 ;
     grid-row: 2;
-    height: 80vh;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    height: 75vh;
+    
 }
 
 .seccion{
@@ -32,20 +37,24 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-}
-
-img{
-    width: 35%;
+    flex-wrap: nowrap;
     margin: 10px;
 }
 
+img{
+    width: 30%;
+    margin: 1%;
+}
+
 .barra-lateral{
-    grid-column: 1 7 2;
+    grid-column: 1 / 2;
     grid-row: 2;
-    background-color: blueviolet;
+    background-color: #b09391;
 }
 
 .pie-pagina {
     grid-column: 1 / -1;
     grid-row: 3;
+    background-color: #dbab8b;
+    height: 10vh;
 }
